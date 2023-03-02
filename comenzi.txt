@@ -10,3 +10,9 @@ http-server
 
 -------------------------- SHORTCUTS
 CTRL + SHIFT + P --> Serch in VSCode
+
+
+
+Start live server:
+
+npm run start
