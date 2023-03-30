@@ -1,0 +1,36 @@
+/* The navigation bar */
+.navbar {
+  overflow: hidden;
+  background-image: hsl(0, 0%, 13%, 60%);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.navbar .nav-buton {
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background-image: linear-gradient(45deg, 	#fcbcfb, #a6ebfd);
+  color: white;
+}
+
+.navbar .buton-stanga {
+  float: left;
+}
+
+.navbar .buton-dreapta {
+  float: right;
+}
+
+.navbar .selected {
+  background: hsl(250, 100%, 83%, 50%);
+  color: white;
+}

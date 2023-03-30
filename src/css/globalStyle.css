@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css?family=Diplomata|Diplomata+SC|Nova+Slim');
+html,
+body {
+  font-family: 'Nova Slim', normal;
+  background: #212121;
+  height: 100%;
+  background-image: url("/src/img/background3.png");
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  overflow: hidden;
+}
+
+#backgroundAnimat {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 0;
+}
