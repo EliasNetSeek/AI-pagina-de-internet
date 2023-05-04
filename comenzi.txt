@@ -16,6 +16,7 @@ CTRL + SHIFT + P --> Serch in VSCode
 Start live server:
 
 npm run start
+php -S 127.0.0.1:8080
 
 https://tarot.samokat.ru/
 cardsagainsthumanity
