@@ -1,13 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Diplomata|Diplomata+SC|Nova+Slim');
+
 html,
 body {
   font-family: 'Nova Slim', normal;
   background: #212121;
   height: 100%;
   background-image: url("/src/img/background3.png");
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover; /* Resize the background image to cover the entire container */
+  background-position: center;
+  /* Center the image */
+  background-repeat: no-repeat;
+  /* Do not repeat the image */
+  background-size: cover;
+  /* Resize the background image to cover the entire container */
   overflow: hidden;
 }
 
@@ -19,4 +23,22 @@ body {
   left: 0;
   width: 100%;
   z-index: 0;
+}
+
+.pickText {
+  text-align: center;
+  margin-top: 75px;
+  color: wheat;
+}
+
+.pickedCards {
+  text-align: center;
+  margin-top: 575px;
+  color: wheat;
+}
+
+.newPicked {
+  text-align: center;
+  margin-top: 10px;
+  color: wheat;
 }

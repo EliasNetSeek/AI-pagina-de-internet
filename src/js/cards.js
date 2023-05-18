@@ -89,8 +89,8 @@ function getRandomInt(max) {
     return Math.floor(Math.random() * max + 1);
 }
 
-window.onload = function(){
-    var deltCards = [];
+var deltCards = [];
+window.onload = function () {
     for (let i = 0; i < 5; i++) {
         var kard = getRandomInt(cardList.length);
 
@@ -100,14 +100,25 @@ window.onload = function(){
             kard = getRandomInt(cardList.length);
         }
 
-        document.getElementById('card' + (i+1) + 'face').style.background = 'url(/src/img/cards/Card' + kard +'.png)';
-        document.getElementById('card' + (i+1) + 'face').style.backgroundSize = '240px 430px';
-        document.getElementById('card' + (i+1)).style.top = cardPosition[i].top;
-        document.getElementById('card' + (i+1)).style.left = cardPosition[i].left;
-        document.getElementById('card' + (i+1)).style.transform = 'rotate('+cardPosition[i].rotate+'deg)';
-        console.log(i + ": " + cardList[kard-1].name)
+        document.getElementById('card' + (i + 1) + 'face').style.background = 'url(/src/img/cards/Card' + kard + '.png)';
+        document.getElementById('card' + (i + 1) + 'face').style.backgroundSize = '240px 430px';
+        document.getElementById('card' + (i + 1)).style.top = cardPosition[i].top;
+        document.getElementById('card' + (i + 1)).style.left = cardPosition[i].left;
+        document.getElementById('card' + (i + 1)).style.transform = 'rotate(' + cardPosition[i].rotate + 'deg)';
+        console.log(i + ": " + cardList[kard - 1].name)
     }
 };
 
-console.log(cardList[1].number)
-console.log(getRandomInt(cardList.length));
+var pickedCards = [];
+function pickedCard(cardNo) {
+    if (!pickedCards.includes(cardNo) && pickedCards.length < 3) {
+        pickedCards.push(cardNo);
+
+        var newLine = document.getElementById('pickedCards');
+        newLine.insertAdjacentHTML('afterend', "<h2 class='newPicked' id='newPicked'> ${deltCards[cardNo]} </h2>");
+
+
+        // document.getElementById('card' + (i + 1) + 'face').
+        console.log("nu a fost aleasa")
+    }
+}

@@ -8,12 +8,17 @@ echo '
     <link rel="stylesheet" href="/src/css/navBar.css">
     <link rel="stylesheet" href="/src/css/globalStyle.css">
     <link rel="stylesheet" href="/src/css/cards.css">
+    <link rel="stylesheet" href="/src/css/stars.css">
     <script src="/src/js/cards.js"></script>
     <script src="/src/js/background.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/p5@1.6.0/lib/p5.js"></script>
 </head>
 
 <body>
+        <div class="stars2"></div>
+        <div class="stars1"></div>
+        <div class="stars"></div>
+
     <div class="navbar">
         <a class="nav-buton buton-stanga selected" href="#home">Homepage</a>
         <a class="nav-buton buton-stanga" href="all-cards.html">All Cards</a>
@@ -23,7 +28,10 @@ echo '
 
     <div>
 
-        <div class="flip-card" id="card1">
+        <h2 class="pickText">Pick 3 out of 5</h2>
+        <h2 class="pickedCards" id="pickedCards">You picked: </h2>
+
+        <div class="flip-card" id="card1" onmouseover="pickedCard(1)">
             <div class="flip-card-inner">
                 <div class="flip-card-front">
                     <img src="/src/img/cards/Back.png" style=" border-radius: 10px;width:240px;height:430px;">
@@ -36,7 +44,7 @@ echo '
             </div>
         </div>
 
-        <div class="flip-card" id="card2">
+        <div class="flip-card" id="card2" onmouseover="pickedCard(2)">
             <div class="flip-card-inner">
                 <div class="flip-card-front">
                     <img src="/src/img/cards/Back.png" style=" border-radius: 10px;width:240px;height:430px;">
@@ -49,7 +57,7 @@ echo '
             </div>
         </div>
 
-        <div class="flip-card" id="card3">
+        <div class="flip-card" id="card3" onmouseover="pickedCard(3)">
             <div class="flip-card-inner">
                 <div class="flip-card-front">
                     <img src="/src/img/cards/Back.png" style=" border-radius: 10px; width:240px;height:430px;">
@@ -62,7 +70,7 @@ echo '
             </div>
         </div>
 
-        <div class="flip-card" id="card4">
+        <div class="flip-card" id="card4" onmouseover="pickedCard(4)">
             <div class="flip-card-inner">
                 <div class="flip-card-front">
                     <img src="/src/img/cards/Back.png" style=" border-radius: 10px;width:240px;height:430px;">
@@ -75,7 +83,7 @@ echo '
             </div>
         </div>
 
-        <div class="flip-card" id="card5">
+        <div class="flip-card" id="card5" onmouseover="pickedCard(5)">
             <div class="flip-card-inner">
                 <div class="flip-card-front">
                     <img src="/src/img/cards/Back.png" style=" border-radius: 10px;width:240px;height:430px;">
