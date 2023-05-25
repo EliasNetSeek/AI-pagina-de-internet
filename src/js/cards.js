@@ -98,6 +98,7 @@ window.onload = function () {
             deltCards.push(kard);
         } else {
             kard = getRandomInt(cardList.length);
+            deltCards.push(kard);
         }
 
         document.getElementById('card' + (i + 1) + 'face').style.background = 'url(/src/img/cards/Card' + kard + '.png)';
@@ -115,10 +116,6 @@ function pickedCard(cardNo) {
         pickedCards.push(cardNo);
 
         var newLine = document.getElementById('pickedCards');
-        newLine.insertAdjacentHTML('afterend', "<h2 class='newPicked' id='newPicked'> ${deltCards[cardNo]} </h2>");
-
-
-        // document.getElementById('card' + (i + 1) + 'face').
-        console.log("nu a fost aleasa")
+        newLine.insertAdjacentHTML('afterend', "<h2 class='newPicked' id='newPicked'>" + cardList[ deltCards[cardNo - 2] ].name + "</h2>");
     }
 }
